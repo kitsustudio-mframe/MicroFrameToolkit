@@ -1,4 +1,4 @@
-package net.kitsustudio.mframe;
+package net.kitsu.mframe;
 
 import junit.framework.Test;
 import junit.framework.TestCase;
