@@ -12,6 +12,14 @@ public class ConfigLoader {
     public ConfigLoader(){
     }
 
+    public String getCustomFile(String filename){
+        return this.loadString(filename);
+    }
+
+    public String getConfig(){
+        return this.loadString("config.yml");
+    }
+
     public String getIgnoreFolder(){
         return this.loadString("ignore-list.txt");
     }
@@ -25,11 +33,11 @@ public class ConfigLoader {
     }
 
     private File getWorkFolder(){
-        return Application.getInstance().getArguments().getWorkFolder();
+        return Application.getInstance().getGlobal().getProgram().getWorkFolder();
     }
 
     private File getProgramFolder(){
-        return Application.getInstance().getArguments().getProgramFolder();
+        return Application.getInstance().getGlobal().getProgram().getProgramFolder();
     }
 
     private String loadString(String fileName){

@@ -1,6 +1,7 @@
-package net.kitsu.mframe;
+package net.kitsu.mframe.util;
 
 import lombok.Getter;
+import net.kitsu.mframe.Application;
 
 import java.util.*;
 
@@ -66,5 +67,42 @@ public class IgnoreList {
     public void reload(String folder, String file){
         this.reloadFile(file);
         this.reloadFolder(folder);
+    }
+
+    @Override
+    public String toString(){
+        List<String> folderList = this.getIgnoreFolderList();
+        List<String> fileList = this.getIgnoreFileList();
+        StringBuilder stringBuilder = new StringBuilder("\r\n");
+
+        if(folderList.size() != 0){
+            int i=0;
+            stringBuilder.append("------------------------------------------\r\nfolder list:\r\n");
+            for(String s : folderList){
+                stringBuilder.append(i);
+                stringBuilder.append(") ");
+                stringBuilder.append(s);
+                stringBuilder.append("\r\n");
+                ++i;
+            }
+        }else{
+            stringBuilder.append("------------------------------------------\r\nfolder ignore is empty\r\n");
+        }
+
+        if(fileList.size() != 0){
+            int i=0;
+            stringBuilder.append("------------------------------------------\r\nfile list:\r\n");
+            for(String s : fileList){
+                stringBuilder.append(i);
+                stringBuilder.append(") ");
+                stringBuilder.append(s);
+                stringBuilder.append("\r\n");
+                ++i;
+            }
+        }else{
+            stringBuilder.append("------------------------------------------\r\nfile ignore is empty\r\n");
+        }
+
+        return stringBuilder.toString();
     }
 }

@@ -2,7 +2,7 @@ package net.kitsu.mframe.func.pkg;
 
 import lombok.Data;
 import net.kitsu.mframe.Application;
-import net.kitsu.mframe.IgnoreList;
+import net.kitsu.mframe.util.IgnoreList;
 
 import java.io.File;
 import java.io.IOException;

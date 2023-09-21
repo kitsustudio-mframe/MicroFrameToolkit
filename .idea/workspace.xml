@@ -4,30 +4,26 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d0688257-269c-4cf9-968f-0f86a71a6687" name="变更" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/net/kitsu/mframe/Application.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/net/kitsu/mframe/FilePath.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/net/kitsu/mframe/IgnoreList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/net/kitsu/mframe/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/net/kitsu/mframe/command/CommandExit.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/net/kitsu/mframe/command/CommandPackage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/net/kitsu/mframe/command/CommandRegister.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/net/kitsu/mframe/command/CommandReload.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/net/kitsu/mframe/command/CommandSet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/net/kitsu/mframe/command/CommandShow.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/net/kitsu/mframe/func/PackageInfo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/net/kitsu/mframe/func/pkg/IncludeList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/net/kitsu/mframe/func/pkg/PackageFileFilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/net/kitsu/mframe/func/pkg/PackageFolderFilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/net/kitsu/mframe/util/Arguments.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/net/kitsu/mframe/util/ConfigLoader.java" afterDir="false" />
+    <list default="true" id="4ceb34a7-0d03-40a8-9d53-ca33f29351ff" name="更改" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/net/kitsu/mframe/command/CommandCreate.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/net/kitsu/mframe/command/CommandSetting.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/net/kitsu/mframe/util/CustomConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/net/kitsu/mframe/util/GlobalVariable.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/net/kitsu/mframe/util/ProgramConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/kitsustudio/mframe/App.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/net/kitsustudio/mframe/AppTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/net/kitsu/mframe/AppTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.kitconfig/package-info.h" beforeDir="false" afterPath="$PROJECT_DIR$/.kitconfig/package-info.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/kitsu/mframe/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/kitsu/mframe/Application.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/kitsu/mframe/FilePath.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/kitsu/mframe/IgnoreList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/kitsu/mframe/util/IgnoreList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/kitsu/mframe/command/CommandRegister.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/kitsu/mframe/command/CommandReload.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/kitsu/mframe/command/CommandReload.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/kitsu/mframe/command/CommandSet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/kitsu/mframe/command/CommandShow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/kitsu/mframe/command/CommandInfo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/kitsu/mframe/func/PackageInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/kitsu/mframe/func/PackageInfo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/kitsu/mframe/func/pkg/IncludeList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/kitsu/mframe/func/pkg/IncludeList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/kitsu/mframe/util/Arguments.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/kitsu/mframe/util/ConfigLoader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/kitsu/mframe/util/ConfigLoader.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,13 +49,8 @@
         <option name="useMavenConfig" value="true" />
       </MavenGeneralSettings>
     </option>
-    <option name="importingSettings">
-      <MavenImportingSettings>
-        <option name="workspaceImportEnabled" value="true" />
-      </MavenImportingSettings>
-    </option>
   </component>
-  <component name="ProjectId" id="2VN6CcZvdqnc8gzL6F2Bdnl30DN" />
+  <component name="ProjectId" id="2VS5uhbmaljGNv0FGx4Ph0Pzug6" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -67,10 +58,7 @@
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;SDK&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;
   }
 }</component>
   <component name="RunManager">
@@ -96,12 +84,23 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="应用程序级" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="默认任务">
-      <changelist id="d0688257-269c-4cf9-968f-0f86a71a6687" name="变更" comment="" />
-      <created>1694664066933</created>
+      <changelist id="4ceb34a7-0d03-40a8-9d53-ca33f29351ff" name="更改" comment="" />
+      <created>1694816872025</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1694664066933</updated>
+      <updated>1694816872025</updated>
     </task>
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>

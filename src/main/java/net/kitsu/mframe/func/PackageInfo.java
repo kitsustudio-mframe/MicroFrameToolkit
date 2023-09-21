@@ -2,7 +2,7 @@ package net.kitsu.mframe.func;
 
 import lombok.Getter;
 import net.kitsu.mframe.Application;
-import net.kitsu.mframe.IgnoreList;
+import net.kitsu.mframe.util.IgnoreList;
 import net.kitsu.mframe.func.pkg.IncludeList;
 
 import java.io.File;
@@ -17,11 +17,11 @@ public class PackageInfo {
     }
 
     public IgnoreList getIgnoreFolder(){
-        return Application.getInstance().getIgnoreFolder();
+        return Application.getInstance().getGlobal().getIgnoreList();
     }
 
     public File getWorkFolder(){
-        return Application.getInstance().getArguments().getWorkFolder();
+        return Application.getInstance().getGlobal().getProgram().getWorkFolder();
     }
 
     public void update(){

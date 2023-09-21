@@ -4,7 +4,7 @@ import net.kitsu.lib.util.format.LoggerFormat;
 import net.kitsu.lib.util.terminal.Terminal;
 import net.kitsu.mframe.command.*;
 import net.kitsu.mframe.util.ConfigLoader;
-import net.kitsu.mframe.util.Arguments;
+import net.kitsu.mframe.util.GlobalVariable;
 
 import java.util.Scanner;
 import java.util.logging.ConsoleHandler;
@@ -15,12 +15,11 @@ public final class Application extends Terminal implements Runnable{
     @Getter
     private static Application instance;
 
+
     @Getter
-    private final Arguments arguments;
+    private final GlobalVariable global;
     @Getter
     private final Logger logger;
-    @Getter
-    private final IgnoreList ignoreFolder;
     @Getter
     private final ConfigLoader configLoader;
     private final Scanner scanner;
@@ -30,19 +29,19 @@ public final class Application extends Terminal implements Runnable{
         Application.instance = this;
         this.logger = this.setupLogger();
         this.scanner = new Scanner(System.in);
-        this.arguments = new Arguments(args);
+        this.global = new GlobalVariable();
         this.configLoader = new ConfigLoader();
+        this.global.reload();
+        this.global.update(args);
+
 
         this.commandHandlerMap.put("package", new CommandPackage());
         this.commandHandlerMap.put("exit", new CommandExit());
-        this.commandHandlerMap.put("show", new CommandShow());
-        this.commandHandlerMap.put("set", new CommandSet());
+        this.commandHandlerMap.put("info", new CommandInfo());
+        this.commandHandlerMap.put("setting", new CommandSetting());
         this.commandHandlerMap.put("reload", new CommandReload());
-        this.commandHandlerMap.put("regedit", new CommandRegister());
+        this.commandHandlerMap.put("create", new CommandCreate());
         this.start = true;
-
-        this.ignoreFolder = new IgnoreList();
-        this.ignoreFolder.reload(this.configLoader.getIgnoreFolder(), this.configLoader.getIgnoreFile());
     }
 
     public void stop(){

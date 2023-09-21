@@ -9,9 +9,7 @@ import java.util.logging.Logger;
 public class CommandReload implements CommandHandler {
     @Override
     public boolean onCommand(StringBuff stringBuff, Logger logger) {
-        String folder = Application.getInstance().getConfigLoader().getIgnoreFolder();
-        String file = Application.getInstance().getConfigLoader().getIgnoreFile();
-        Application.getInstance().getIgnoreFolder().reload(folder, file);
+        Application.getInstance().getGlobal().reload();
         logger.info("reload successful.");
         return true;
     }
