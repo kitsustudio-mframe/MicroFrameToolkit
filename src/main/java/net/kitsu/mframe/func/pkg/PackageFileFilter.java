@@ -28,7 +28,7 @@ public class PackageFileFilter implements FileFilter {
         String fileExtension = fileName.substring(1+index);
 
         if(fileExtension.equalsIgnoreCase("package-info.h"))
-            return true;
+            return false;
 
         if(fileExtension.equalsIgnoreCase("h"))
             return true;

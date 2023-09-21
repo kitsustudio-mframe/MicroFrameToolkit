@@ -32,7 +32,6 @@ public class IncludeList {
                     if(ignoreList.isIgnoreFile(f.getName()))
                         continue;
                 }
-
                 this.fileList.add(f.getName());
             }
         }
@@ -46,7 +45,7 @@ public class IncludeList {
                         continue;
                 }
 
-                IncludeList list = new IncludeList(f, null);
+                IncludeList list = new IncludeList(f, ignoreList);
                 if(!list.isEmpty())
                     this.folderList.add(list);
             }
